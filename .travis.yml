@@ -15,5 +15,6 @@ deploy:
     local_dir: dist,
     keep_history: true,
     on:
-      branch: main
+      branch:
+        main
     token: $GITHUB_TOKEN
