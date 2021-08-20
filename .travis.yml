@@ -1,29 +1,20 @@
 language: node_js,
-os: [
-  linux
-],
+os:
+  - linux
 dist: xenial,
-node_js: [
-  lts/*
-],
-install: [
-  npm ci
-],
-script: [
-  npm run build
-],
-deploy: [
-  {
+node_js:
+  - lts/*
+install:
+  - npm ci
+script:
+  - npm run build
+deploy: 
     provider: pages,
     strategy: git,
     skip_cleanup: true,
     local_dir: dist,
     keep_history: true,
-    on: {
-      branch: [
+    on:
+      branch:
         main
-      ]
-    },
     token: $TOKEN
-  }
-]
