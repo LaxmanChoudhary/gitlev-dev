@@ -1,7 +1,6 @@
 {
-  "homepage": "http://LaxmanChoudhary.github.io/gitlev",
-  "name": "gitlev",
-  "version": "0.0.0",
+  "name": "gitlev-dev",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
