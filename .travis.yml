@@ -17,4 +17,4 @@ deploy:
     on:
       branch:
         main
-    token: $TOKEN
+    token: $GITHUB_TOKEN
