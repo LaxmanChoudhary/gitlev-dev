@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
 
 const About = () => {
   const user = useSelector((state) => state.gitdata.user);
-  console.log(user);
   const isLoading = useSelector((state) => state.gitdata.isLoading);
 
   const classes = useStyles();

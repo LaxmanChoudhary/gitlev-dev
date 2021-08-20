@@ -22,7 +22,6 @@ const Root = (props) => {
     fetch(url + login)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         dispatch(fetchUser(data));
         Promise.all([
           fetch(data.repos_url),
@@ -31,7 +30,6 @@ const Root = (props) => {
         ])
           .then((res) => Promise.all(res.map((r) => r.json())))
           .then((data) => {
-            console.log(data)
             dispatch(fetchUserRepos(data[0]));
             dispatch(fetchStarred(data[1]));
             dispatch(fetchFollowing(data[2]));
