@@ -19,7 +19,7 @@ import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const drawerWidth = 220;
+const drawerWidth = 200;
 
 const useStyles = makeStyles((theme) => ({
   nav: {
@@ -88,11 +88,11 @@ const Layout = ({ children }) => {
       {/* Appbar */}
       <AppBar elevation={1} position="fixed" className={classes.appbar}>
         <Toolbar>
-          {location.pathname == "/gitlev/" ? null : (
+          {/* {location.pathname == "/gitlev/" ? null : (
             <Typography variant="h6">
               {user ? user.login : "Search user first!"}
             </Typography>
-          )}
+          )} */}
         </Toolbar>
       </AppBar>
 

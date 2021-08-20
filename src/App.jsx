@@ -2,19 +2,29 @@ import React from "react";
 import Root from "./pages/Root";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Layout from "./components/layout";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Repos from "./components/Repos";
 import Starred from "./components/Starred";
 import Following from "./components/Following";
 import About from "./components/About";
+import { yellow } from "@material-ui/core/colors";
 
 const theme = createTheme({
   typography: {
     fontFamily: '"Quicksand", sans-serif',
   },
+  palette: {
+    yellowish: {
+      light: yellow[300],
+      main: yellow[400],
+      dark: yellow[500],
+      contrastText: "#fff"
+    }
+  }
 });
 
 function App() {
+  console.log(theme)
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

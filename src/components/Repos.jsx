@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import RepoDisplay from './display/RepoDisplay'
 
 const Repos = () => {
   const repos = useSelector((state) => state.gitdata.repos)
@@ -9,7 +10,7 @@ const Repos = () => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (repos.length ? (repos.map(repo => (
-        <p key={repo.id}>{repo.name}</p>
+        <RepoDisplay repo={repo} key={repo.id} />
       ))) : (
         <p>No repos to show yet!</p>
       ))}

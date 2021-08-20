@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import RepoDisplay from './display/RepoDisplay'
 
 const Starred = () => {
   const starred = useSelector(state => state.gitdata.starred)
@@ -10,7 +11,7 @@ const Starred = () => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (starred.length ? (starred.map(each => (
-        <p key={each.id}>{each.name}</p>
+        <RepoDisplay repo={each} key={each.id} />
       ))) : (
         <p>No starred to show yet!</p>
       ))}

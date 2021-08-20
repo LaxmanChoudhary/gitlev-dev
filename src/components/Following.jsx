@@ -9,7 +9,6 @@ const Following = () => {
 
   return (
     <Container>
-      <Typography style={{margin: "20px"}} variant="h4">User follows</Typography>
       <Grid container>
         {isLoading ? (
           <p>Loading...</p>
