@@ -16,5 +16,5 @@ deploy:
     keep_history: true,
     on:
       branch:
-        main
+        gh-pages
     token: $GITHUB_TOKEN
