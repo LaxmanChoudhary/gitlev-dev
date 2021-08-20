@@ -9,11 +9,11 @@ install:
 script:
   - npm run build
 deploy: 
-    provider: pages,
-    strategy: git,
-    skip_cleanup: true,
-    local_dir: dist,
-    keep_history: true,
+    provider: pages
+    strategy: git
+    skip_cleanup: true
+    local_dir: dist
+    keep_history: true
     on:
       branch:
         main
