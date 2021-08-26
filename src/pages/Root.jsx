@@ -36,7 +36,7 @@ const Root = (props) => {
             dispatch(dataLoading());
           });
       })
-      .then(() => props.history.push("/gitlev/about"));
+      .then(() => props.history.push("/gitlev-dev/about"));
   };
   return (
     <Container>

@@ -58,27 +58,27 @@ const Layout = ({ children }) => {
   const paths = [
     {
       name: "root",
-      path: "/gitlev/",
+      path: "/gitlev-dev/",
       icon: <HomeRoundedIcon />,
     },
     {
       name: "about",
-      path: "/gitlev/about",
+      path: "/gitlev-dev/about",
       icon: <PersonRoundedIcon />,
     },
     {
       name: "repos",
-      path: "/gitlev/repos",
+      path: "/gitlev-dev/repos",
       icon: <FolderRoundedIcon />,
     },
     {
       name: "starred",
-      path: "/gitlev/starred",
+      path: "/gitlev-dev/starred",
       icon: <StarRoundedIcon />,
     },
     {
       name: "following",
-      path: "/gitlev/following",
+      path: "/gitlev-dev/following",
       icon: <AttachFileIcon />,
     },
   ];

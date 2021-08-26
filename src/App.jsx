@@ -29,11 +29,11 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path="/gitlev/" component={Root} />
-            <Route path="/gitlev/about" component={About} />
-            <Route path="/gitlev/Repos" component={Repos} />
-            <Route path="/gitlev/Starred" component={Starred} />
-            <Route path="/gitlev/following" component={Following} />
+            <Route exact path="/gitlev-dev/" component={Root} />
+            <Route path="/gitlev-dev/about" component={About} />
+            <Route path="/gitlev-dev/Repos" component={Repos} />
+            <Route path="/gitlev-dev/Starred" component={Starred} />
+            <Route path="/gitlev-dev/following" component={Following} />
           </Switch>
         </Layout>
       </BrowserRouter>
